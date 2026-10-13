@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Component library: responsive grid, form elements, alerts, and a CSS-only modal.">
+    <title>Components | Mohamed Maher</title>
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
+    <p class="brand">First website</p>
+    <nav aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="component.html" aria-current="page">Components</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main id="main">
+    <h1>Component library</h1>
+
+    <section aria-labelledby="grid-title">
+        <h2 id="grid-title">Responsive grid</h2>
+        <p>One column on mobile, two on tablet (768px and up), three on desktop (1024px and up).</p>
+        <div class="cards">
+            <div><h3>Card one</h3><p>Resize the window to watch the columns change.</p></div>
+            <div><h3>Card two</h3><p>Built with CSS Grid and two media queries.</p></div>
+            <div><h3>Card three</h3><p>Colors come from tokens, so dark mode just works.</p></div>
+            <div><h3>Card four</h3><p>Each card is a plain block, no extra markup.</p></div>
+            <div><h3>Card five</h3><p>Add the <code>cards</code> class to any list or div.</p></div>
+            <div><h3>Card six</h3><p>The last row fills automatically.</p></div>
+        </div>
+    </section>
+
+    <section aria-labelledby="form-title">
+        <h2 id="form-title">Form elements</h2>
+        <form action="#" method="post">
+            <div class="field">
+                <label for="demo-input">Text input</label>
+                <input type="text" id="demo-input" name="demo-input" placeholder="Type something" aria-describedby="demo-hint">
+                <p class="hint" id="demo-hint">Helper text sits under the field.</p>
+            </div>
+            <div class="field">
+                <label for="demo-select">Select dropdown</label>
+                <select id="demo-select" name="demo-select">
+                    <option>Option one</option>
+                    <option>Option two</option>
+                    <option>Option three</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="demo-disabled">Disabled input</label>
+                <input type="text" id="demo-disabled" value="Not editable" disabled>
+            </div>
+            <div class="row">
+                <button type="button">Primary button</button>
+                <button type="button" class="btn--ghost">Secondary button</button>
+                <button type="button" disabled>Disabled button</button>
+            </div>
+        </form>
+    </section>
+
+    <section aria-labelledby="alert-title">
+        <h2 id="alert-title">Alerts</h2>
+        <div class="alert alert--success" role="status"><p><strong>Success:</strong> Your changes were saved.</p></div>
+        <div class="alert alert--error" role="alert"><p><strong>Error:</strong> The email address is not valid. Check it and try again.</p></div>
+        <div class="alert alert--warning" role="status"><p><strong>Warning:</strong> Your session ends in 5 minutes.</p></div>
+        <div class="alert" role="status"><p><strong>Note:</strong> A new version of this page is available.</p></div>
+    </section>
+
+    <section id="modal-demo" aria-labelledby="modal-title-heading">
+        <h2 id="modal-title-heading">Modal window (CSS only)</h2>
+        <p>The modal opens and closes with links and the <code>:target</code> pseudo-class, no JavaScript.</p>
+        <a class="btn" href="#demo-modal">Open modal</a>
+    </section>
+</main>
+
+<div class="modal" id="demo-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <a class="modal__backdrop" href="#modal-demo" tabindex="-1" aria-hidden="true"></a>
+    <div class="modal__dialog">
+        <a class="modal__close" href="#modal-demo" aria-label="Close dialog">&times;</a>
+        <h2 id="modal-title">Confirm your choice</h2>
+        <p>This dialog is built with HTML and CSS only. Use the close button or the buttons below to dismiss it.</p>
+        <div class="row">
+            <a class="btn" href="#modal-demo">Confirm</a>
+            <a class="btn btn--ghost" href="#modal-demo">Cancel</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Mohamed. All rights reserved.</p>
+</footer>
+</body>
+</html>

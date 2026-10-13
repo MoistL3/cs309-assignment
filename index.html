@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohamed Maher, a beginner web developer building his first portfolio.">
+    <title>Home | Mohamed Maher</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
+    <p class="brand" id="title">First website</p>
+    <nav aria-label="Main">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="component.html">Components</a>
+        <a href="contact.html">Contact</a>
+        <button id="navbutton" type="button" onclick="paragraph()">Try it</button>
+    </nav>
+</header>
+
+<main id="main">
+    <h1 id="header1">My name is Mohamed Maher</h1>
+    <div id="feedback" role="status" aria-live="polite"></div>
+    <article>
+        <h2>About me</h2>
+        <p id="aboutme">Hi, I'm <strong>Mohamed Maher</strong>, a beginner web developer
+            who is passionate about building things for the web. I'm currently
+            learning <em>HTML</em>, <em>CSS</em>, and <em>JavaScript</em>, and
+            this page is one of my first projects.</p>
+        <p id="psolving">I enjoy solving problems and turning ideas into real, working pages.
+            My goal is to become a professional software developer and build
+            useful apps that people love to use.</p>
+        <button type="button" onclick="changePsolving()">Change text</button>
+        <p>Feel free to <a href="contact.html">contact me</a> if you want to connect or work together.</p>
+            <track kind="captions" src="videos/captions.vtt" srclang="en" label="English">
+            Your browser does not support the video tag.
+        </video>
+    </article>
+</main>
+
+<footer>
+    <p>Follow the page for more content</p>
+    <div class="row">
+        <button type="button" id="dontclick" onclick="dont()">Don't click!</button>
+        <button type="button" id="print" onclick="myPrint()">Print</button>
+    </div>
+</footer>
+<script src="JS/script.js"></script>
+</body>
+</html>

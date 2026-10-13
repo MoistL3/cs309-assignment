@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Mohamed Maher for collaborations, inquiries, or feedback.">
+    <title>Contact | Mohamed Maher</title>
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
+    <p class="brand">First website</p>
+    <nav aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="component.html">Components</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+</header>
+
+<main id="main">
+    <h1>The assignment page</h1>
+    <p>Feel free to reach out for collaborations, inquiries, or feedback.</p>
+
+    <form id="contact-form" action="#" method="post">
+        <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+        </div>
+        <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-hint">
+            <p class="hint" id="email-hint">I'll only use it to reply to you.</p>
+        </div>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+        </fieldset>
+
+        <div class="field">
+            <label for="subject">Why are you here?</label>
+            <select id="subject" name="subject" required>
+                <option value="" disabled selected>Please choose a reason</option>
+                <option value="general">General inquiry</option>
+                <option value="project">Project collaboration</option>
+                <option value="feedback">Feedback</option>
+            </select>
+        </div>
+
+        <fieldset>
+            <legend>Interests / services required</legend>
+            <label><input type="checkbox" name="interests" value="backend"> Backend</label>
+            <label><input type="checkbox" name="interests" value="frontend"> Frontend</label>
+            <label><input type="checkbox" name="interests" value="design"> UI/UX design</label>
+            <label><input type="checkbox" name="interests" value="database"> Databases</label>
+            <label><input type="checkbox" name="interests" value="devops"> DevOps</label>
+        </fieldset>
+
+        <div class="field">
+            <label for="message-box">Message</label>
+            <textarea id="message-box" rows="5" name="message" placeholder="Write your message here" required></textarea>
+        </div>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2026 Mohamed. All rights reserved.</p>
+</footer>
+</body>
+</html>
